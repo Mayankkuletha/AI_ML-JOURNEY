@@ -20,6 +20,7 @@ class Students :
     def get_info(self):
         return f"{self.name} {self.gpa}"
 
+    # e: @classmethod tab useful hai jab method ko class ka data chahiye. Yahan get_count() ko count chahiye aur get_average() ko count + total_gpa, isliye @classmethod use kiya hai._
     @classmethod
     def get_count(cls):
         return f"total # of students :{cls.count}"
