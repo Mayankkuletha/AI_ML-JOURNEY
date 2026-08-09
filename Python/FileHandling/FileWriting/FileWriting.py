@@ -25,6 +25,8 @@ file_path = "Python\\FileHandling\\output.txt"
 
 # a -->append --> we can append data in the file it will also create file if not exist. and continue adding data ahead of old data
 try: 
+    #file = open(file_path, "r") #If we dont want to use with 
+    # but then we have to close the file manually file.close()
     with open(file_path,"a") as file:
         # file.write(txt_data)
         # file.write("\n"+txt_data)
