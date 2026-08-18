@@ -1,0 +1,87 @@
+• Data Preprocessing
+
+Meaning:
+Data preprocessing ka matlab hai raw data ko clean aur ML model ke liye usable format me convert karna.
+
+Real-world data usually messy hota hai:
+
+Missing values
+Duplicate rows
+Wrong data types
+Outliers
+Different formats
+Categorical values
+
+Model ko directly raw data dene ke bajay hum pehle usko prepare karte hain. Isi process ko Data Preprocessing kehte hain.
+
+• Main Steps of Data Preprocessing
+
+• 1. Data Cleaning — Data ko clean karna
+
+Missing values handle karna
+Duplicates remove karna
+Wrong/inconsistent values fix karna
+
+• 2. Data Transformation — Data ka format/scale change karna
+
+Data types correct karna
+Scaling/normalization
+Log transformation etc.
+
+• 3. Categorical Data Encoding — Text ko numbers me convert karna
+
+Example:
+
+Gender
+Male
+Female
+Male
+
+ML ke liye:
+
+Male   → 1
+Female → 0
+
+• 4. Feature Selection — Useful columns choose karna
+
+Useful columns/features rakhna
+Unnecessary columns remove karna
+
+• 5. Train-Test Split — Data ko training aur testing me divide karna
+
+Training Data → Model ko train karne ke liye
+Testing Data  → Model ko evaluate karne ke liye
+
+• 6. Feature Scaling — Features ko comparable range me lana
+
+Example:
+
+Age    → 20–60
+Salary → 20,000–2,00,000
+
+Scaling se dono features ko suitable/common range me laate hain.
+
+• Simple Example
+
+Raw data:
+
+Age    Salary    Gender
+20     20000     Male
+22     NaN       Female
+20     20000     Male
+
+Preprocessing ke baad:
+
+Age    Salary    Gender
+20     20000     1
+22     25000     0
+
+Yahan humne:
+
+Missing value handle ki
+Duplicate remove kiya
+Gender encode kiya
+
+• Short Definition
+
+Data preprocessing is the process of cleaning, transforming, and preparing raw data so that it can be effectively used for machine learning models.
